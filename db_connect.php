@@ -1,10 +1,3 @@
 <?php
-$servername = 'remotemysql.com';
-$username = 'Bi25Netqw8';
-$password = 'mlFm8N0546';
-$bdname = 'Bi25Netqw8';
-$charset = 'utf8mb4';
-
-$dsn = "mysql:host=$servername;dbname=$bdname;charset=$charset";
-$conn = new PDO($dsn, $username, $password);
+$conn = new mysqli('localhost','mysql','mysql','todo_db')or die("Could not connect to mysql".mysqli_error($con));
 ?>
